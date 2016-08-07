@@ -5,7 +5,12 @@ module.exports = function exportModels(collections) {
     artist: String,
     url: String,
     album: Object,
-    expirytime:    { type: Date, expires: '900s', default: Date.now },
+    hash: String,
+    expirytime: {
+      type: Date,
+      expires: '900s',
+      default: Date.now
+    },
     created_at: Date,
     updated_at: {
       type: Date,
@@ -13,6 +18,6 @@ module.exports = function exportModels(collections) {
     },
   }));
   return {
-    songs: songs,
+    Songs: songs,
   };
-};
+}();

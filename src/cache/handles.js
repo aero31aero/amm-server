@@ -115,6 +115,6 @@ module.exports = function getEndPoints(configuration) {
   }
 
   return {
-    
+
   };
 };
