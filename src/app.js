@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var blog = require('./blog/blog')({
+var blog = require('./cache/route')({
   collections: {
     posts: "posts"
   },
